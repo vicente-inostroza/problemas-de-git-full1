@@ -1,4 +1,4 @@
-package com.favoritos.favoritos.model;
+package com.example.favoritos.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
