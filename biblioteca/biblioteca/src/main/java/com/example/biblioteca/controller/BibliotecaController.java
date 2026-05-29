@@ -8,6 +8,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+//URL: http://localhost:8087/biblioteca/usuario/1
+//{
+      // "idUsuario": 1,
+      // "idJuego": 2
+// }
+
 @RestController
 @RequestMapping("/biblioteca")
 public class BibliotecaController {
