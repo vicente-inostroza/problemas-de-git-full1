@@ -22,7 +22,7 @@ public class BibliotecaService {
     public List<RespuestaBiblioteca> comprarCarrito(Integer idUsuario) {
         
         RestTemplate restTemplate = new RestTemplate();
-        String urlCarrito = "http://localhost:8081/carrito/" + idUsuario + "/juegos";
+        String urlCarrito = "http://localhost:8086/carrito/" + idUsuario + "/juegos";
         
         DatosArticuloCarrito[] itemsCarrito = restTemplate.getForObject(urlCarrito, DatosArticuloCarrito[].class);
         List<RespuestaBiblioteca> respuestas = new ArrayList<>();
