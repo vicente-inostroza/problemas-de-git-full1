@@ -15,26 +15,28 @@ public class DataLoader {
     @Bean
     CommandLineRunner initDatabase(GameRepository repository) {
         return args -> {
+            //id juego 1
             crearJuegoSiNoExiste(repository, 
                 "Super Mario Bros", 
                 "Un clásico de plataformas de Nintendo con saltos y aventuras en el Reino Champiñón.", 
                 "29.99", "Plataformas");
 
+            //id juego 2
             crearJuegoSiNoExiste(repository, 
                 "Mortal Kombat X", 
                 "Un juego de lucha visceral con personajes icónicos, fatalidades y combates 1 contra 1.", 
                 "39.99", "Lucha");
-
+            //id juego 3
             crearJuegoSiNoExiste(repository, 
                 "Resident Evil 4", 
                 "Survival horror con acción intensa y la misión de rescatar a la hija del presidente.", 
                 "34.99", "Horror");
-
+            //id juego 4
             crearJuegoSiNoExiste(repository, 
                 "The Walking Dead", 
                 "Aventura narrativa basada en la serie, centrada en decisiones y supervivencia.", 
                 "24.99", "Aventura");
-
+            //id juego 5
             crearJuegoSiNoExiste(repository, 
                 "Fortnite", 
                 "Battle royale multijugador con construcción, acción y partidas rápidas.", 
