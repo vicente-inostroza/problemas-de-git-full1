@@ -9,6 +9,15 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 import java.util.List;
 
+
+
+
+//URL: http://localhost:8089/soporte/ticket/abrir
+//{
+    //   "idUsuario": 1,
+    //   "asunto": "Problema con descarga",
+    //   "descripcion": "El juego se queda pegado en el 99% de la instalación y tira error."
+  // }
 @RestController
 @RequestMapping("/soporte")
 public class TicketSoporteController {

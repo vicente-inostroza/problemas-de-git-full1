@@ -10,25 +10,19 @@ import java.util.List;
 import java.util.Optional;
 import com.microservicio.usuario.dto.UsuarioDTO;
 
+
+//URL: http://localhost:8084/usuarios/guardar
+//{
+       //"nombre": "Juan Pérez",
+       //"correo": "juan.perez@email.com",
+       //"contrasenia": "password123"
+   //}
+
+
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
-    // POSTMAN
-    // url: http://localhost:8082/usuarios/agregar
-    /*
-    
-    body:
-    {
-        "nombre": "Nathan",
-        "apellido": "Drake",
-        "email": "nathan.drake@uncharted.com",
-        "password": "treasure777",
-        "rol": {
-            "idRol": 2
-        }
-    }
 
-    */
 
     @Autowired
     private UsuarioService service;

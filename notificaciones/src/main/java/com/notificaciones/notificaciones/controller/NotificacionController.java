@@ -18,6 +18,8 @@ import java.util.Optional;
    //    "tipo": "Correo"
   // }
 
+  //URL: http://localhost:8083/notificaciones/usuario/1
+
 @RestController
 @RequestMapping("/notificaciones")
 public class NotificacionController {

@@ -8,6 +8,17 @@ import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 import java.util.List;
 
+
+
+//URL: http://localhost:8088/resenas/crear
+
+//{
+//       "idUsuario": 1,
+//       "idJuego": 2,
+//       "comentario": "Excelente juego, la historia te atrapa desde el primer minuto.",
+//       "calificacion": 5
+   //}
+
 @RestController
 @RequestMapping("/resenas")
 public class ResenaController {
