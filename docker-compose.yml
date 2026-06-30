@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  autenticacion:
+    image: msvc-autenticacion:v1
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+      - SPRING_PROFILES_ACTIVE=prod
+
+  biblioteca:
+    image: msvc-biblioteca:v1
+    ports:
+      - "8082:8082"
+    environment:
+      - PORT=8082
+      - SPRING_PROFILES_ACTIVE=prod
+
+  carrito:
+    image: msvc-carrito:v1
+    ports:
+      - "8083:8083"
+    environment:
+      - PORT=8083
+      - SPRING_PROFILES_ACTIVE=prod
+
+  catalogo:
+    image: msvc-catalogo:v1
+    ports:
+      - "8084:8084"
+    environment:
+      - PORT=8084
+      - SPRING_PROFILES_ACTIVE=prod
+
+  favoritos:
+    image: msvc-favoritos:v1
+    ports:
+      - "8085:8085"
+    environment:
+      - PORT=8085
+      - SPRING_PROFILES_ACTIVE=prod
+
+  notificaciones:
+    image: msvc-notificaciones:v1
+    ports:
+      - "8086:8086"
+    environment:
+      - PORT=8086
+      - SPRING_PROFILES_ACTIVE=prod
+
+  resena:
+    image: msvc-resena:v1
+    ports:
+      - "8087:8087"
+    environment:
+      - PORT=8087
+      - SPRING_PROFILES_ACTIVE=prod
+
+  soporte:
+    image: msvc-soporte:v1
+    ports:
+      - "8088:8088"
+    environment:
+      - PORT=8088
+      - SPRING_PROFILES_ACTIVE=prod
+
+  usuario:
+    image: msvc-usuario:v1
+    ports:
+      - "8089:8089"
+    environment:
+      - PORT=8089
+      - SPRING_PROFILES_ACTIVE=prod
